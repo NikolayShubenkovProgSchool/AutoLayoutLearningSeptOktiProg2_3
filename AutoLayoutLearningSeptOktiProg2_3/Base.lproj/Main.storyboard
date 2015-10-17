@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qdC-Nw-XNd">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tp4-0B-DvZ">
+                                <rect key="frame" x="20" y="113" width="280" height="254"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привет Автолейаут!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ht8-n8-Wf7">
+                                <rect key="frame" x="80" y="84" width="161" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puf-yh-hiR">
+                                <rect key="frame" x="36" y="125" width="248" height="224"/>
+                                <animations/>
+                                <string key="text">Франция планирует поставить Египту два предназначавшихся России вертолетоносца «Мистраль» в марте-апреле 2016 года. Об этом представитель кораблестроительной компании DCNS рассказал «Интерфаксу».
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R7-8q-AMa">
+                                <rect key="frame" x="236" y="430" width="68" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Практика"/>
+                                <connections>
+                                    <segue destination="IiI-Ve-wKR" kind="show" id="CfM-gR-Z3f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="puf-yh-hiR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="2fN-RI-SHe"/>
+                            <constraint firstItem="tp4-0B-DvZ" firstAttribute="trailing" secondItem="puf-yh-hiR" secondAttribute="trailing" constant="16" id="4WD-cp-dTv"/>
+                            <constraint firstItem="ht8-n8-Wf7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="6Nx-hn-aAX"/>
+                            <constraint firstItem="ht8-n8-Wf7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DIJ-RM-KmA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="puf-yh-hiR" secondAttribute="trailing" constant="20" id="Gk6-vd-CPQ"/>
+                            <constraint firstItem="2R7-8q-AMa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ip8-5S-qbN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2R7-8q-AMa" secondAttribute="bottom" constant="20" id="L32-ay-0j5"/>
+                            <constraint firstItem="tp4-0B-DvZ" firstAttribute="bottom" secondItem="puf-yh-hiR" secondAttribute="bottom" constant="18" id="ONb-ZG-Uke"/>
+                            <constraint firstItem="puf-yh-hiR" firstAttribute="top" secondItem="ht8-n8-Wf7" secondAttribute="bottom" constant="20" id="aVo-lb-acL"/>
+                            <constraint firstItem="tp4-0B-DvZ" firstAttribute="top" secondItem="puf-yh-hiR" secondAttribute="top" constant="-12" id="mBY-RJ-SZC"/>
+                            <constraint firstItem="tp4-0B-DvZ" firstAttribute="leading" secondItem="puf-yh-hiR" secondAttribute="leading" constant="-16" id="mgS-S4-wrn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7nI-gU-53S"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="49"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kbb-Kc-i9k">
+            <objects>
+                <viewController id="IiI-Ve-wKR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F9c-Y4-KAb"/>
+                        <viewControllerLayoutGuide type="bottom" id="AJ1-Z1-Z1P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NIw-uR-n4U">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x7l-9N-4vo">
+                                <rect key="frame" x="20" y="72" width="280" height="180"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EDq-oQ-jbP">
+                                <rect key="frame" x="20" y="273" width="280" height="187"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SVH-gP-hYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="49"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tS5-7T-aSB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qdC-Nw-XNd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Jc-BT-UQw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fCV-OS-zgC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DiA-Gs-dUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114" y="49"/>
+        </scene>
+    </scenes>
+</document>
